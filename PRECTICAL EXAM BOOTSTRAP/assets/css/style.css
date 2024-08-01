@@ -1,0 +1,187 @@
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.roboto {
+    font-family: roboto;
+}
+
+.heebo {
+    font-family: heebo;
+}
+
+.bg-primary {
+    background-color: #999999;
+}
+
+.btn-primary {
+    background-color: #C19D60;
+}
+
+.text-primary {
+    color: #C19D60 !important;
+}
+
+.text-secondery {
+    color: #000000 !important;
+}
+
+.text-dark {
+    color: #606060 !important;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-17 {
+    font-size: 17px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-23 {
+    font-size: 23px;
+}
+
+.fs-25 {
+    font-size: 25px;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.fs-50 {
+    font-size: 50px;
+}
+
+body {
+    font-size: 14px !important;
+    font-family: roboto;
+    
+    
+   
+}
+
+/* header start  */
+nav.navbar ul li a::after {
+    position: absolute;
+    content: '';
+    box-sizing: border-box;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    right: 0;
+    bottom: 0;
+    transition: all 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+nav.navbar ul li:hover a::after {
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+    width: 100%;
+}
+
+nav.navbar ul li a {
+    color: white !important;
+}
+
+nav.navbar ul li:hover a {
+    color: white !important;
+}
+
+
+
+nav.navbar ul li:last-child a::after {
+    display: none;
+}
+
+nav.navbar ul li:hover .drop-down ul li a::after {
+    display: none;
+    color:#B1B493;
+}
+
+nav.navbar ul li:hover .drop-down ul {
+    visibility: visible !important;
+    opacity: 1 !important;
+    top: 95px !important;
+    z-index: 999;
+}
+
+.btn:hover{
+  background-color:#C19D60;
+  color: white!important;
+}
+
+/* header end */
+
+.banner {
+  width: 100%;
+  height: 100%;
+ 
+  color: white;
+  z-index: 3;
+  padding: 213px 0;
+}
+
+
+
+
+.about{
+  background-color:#1B1B1B;
+}
+
+
+/* team start  */
+.team .team-content{
+  position: absolute;
+  left: 0;
+  bottom: -100px;
+  background-color: rgba(0, 0, 0, 0.603);
+  width: 95%;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+.team .team-img:hover .team-content{
+  height: 100%;
+  bottom: 0;
+}
+.team .content .team-icon ul li:hover a{
+ 
+  color: #fff!important;
+}
+.team .content .team-icon ul li a i{
+  transition: all 0.4s;
+}
+.team .content .team-icon ul li:hover a i{
+  transform: rotate(360deg);
+}
+/* team end */
